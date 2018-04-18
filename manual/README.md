@@ -4,7 +4,8 @@
 
 ## Содержание
 
-- [структура](strict.md)
+- [структура сайта](struct-site.md)
+- [структура Битрикс](struct-bitrix.md)
 - [агенты](agents.md)
 - [компоненты](components.md)
 - [почтовые шаблоны](email-templates.md)
