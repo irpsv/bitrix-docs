@@ -6,6 +6,7 @@
 
 - [установка и настройка рабочего окружения](install.md)
 - [структура сайта](struct-site.md)
+- [структура данных](struct-data.md)
 - [структура Битрикс](struct-bitrix.md)
 - [агенты](agents.md)
 - [компоненты](components.md)
