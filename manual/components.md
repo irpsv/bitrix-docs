@@ -14,7 +14,46 @@
 
 ## Структура
 
-Список файлов и порядок взаимодействия
+Список файлов:
+- .parameters.php
+- .description.php
+- class.php
+- component.php (устарело)
+- lang
+  - папка языковых файлов
+- templates
+  - папки шаблонов
+ 
+Файл **.parameters.php** содержит описание входных параметров компонента для визуального редактора. [Подробнее](https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=43&LESSON_ID=2132&LESSON_PATH=3913.4565.2132).  
+Файл **.description.php**  содержит название, описание компонента и его положение в дереве логического размещения для визуального редактора.  
+Файл **class.php** содержит реализацию класса компонента. [Подробнее](https://dev.1c-bitrix.ru/learning/course/index.php?COURSE_ID=43&LESSON_ID=2828&LESSON_PATH=3913.4565.2828).  
+Файл **component.php** содержит реализацию логики компонента (по сути содержимое метода *executeComponent*). Использовать не стоит, т.к. процедурный стиль днище и он крайне не структурирован.
+
+[Пример реализации](https://github.com/irpsv/bitrix-module/tree/master/src/components/test-comp).
+ 
+## Структура шаблонов компонентов
+
+Список файлов:
+- .description.php
+- .parameters.php
+- result_modifier.php
+- component_epilog.php
+- style.css
+- script.js
+- lang
+  - папка языковых файлов
+- assets
+  - остальные файлы шаблона
+
+Файл **.parameters.php** содержит описание дополнительных параметров шаблона для визуального редактора.  
+Файл **.description.php**  содержит название, описание шаблона для визуального редактора.  
+Файл **result_modifier.php** содержит логику пред-обработки данных шаблона (кешируется).  
+Файл **component_epilog.php** содержит логику пост-обработки данных шаблона (не кешируется).  
+Файл **style.css** содержит CSS стили шаблона.  
+Файл **script.js** содержит JS скрипты шаблона.  
+Также в папке шаблона, допустимо размещать и другие файлы, необходимые для самого шаблона. Однако лучше размешать их в отдельной папке **assets**.
+
+[Пример реализации](https://github.com/irpsv/bitrix-module/tree/master/src/components/test-comp/templates/.default/).
 
 ## Логика работы
 
