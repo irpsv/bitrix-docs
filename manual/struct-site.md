@@ -46,3 +46,18 @@
 2. разграничение ответственности
 
 Разобраться и поддерживать проще/удобнее много маленьких сервисов, чем немного больших.
+
+## CURL
+
+Сервисы внутри друг друга, нужно вызывать через CURL.
+Пример вызова:
+```php
+$ch = curl_init("/api/service/name.php");
+curl_setopt_array($ch, [
+	CURLOPT_RETURNTRANSFER => true,
+]);
+$response = curl_exec($ch);
+curl_close($ch);
+```
+
+[Подробнее](http://php.net/manual/ru/book.curl.php).
