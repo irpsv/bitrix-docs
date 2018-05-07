@@ -19,22 +19,22 @@
 ```php
 $tooltipHtmlId = "uniqe-id-".uniqid();
 $APPLICATION->setEditArea($tooltipHtmlId, [
-  [
-    'URL' => 'https://yandex.ru',
-    'ICON' => 'bx-context-toolbar-edit-icon', // CSS класс иконки
-    'TITLE' => 'Кнопка с иконкой',
-  ],
-  [
-    'URL' => 'javascript:'.$APPLICATION->getPopupLink([
-      'URL' => '/index.php',
-      'PARAMS' => [
-        'width' => '640',
-        'height' => '480',
-      ],
-    ]),
-    'SRC' => 'URL картинки',
-    'TITLE' => 'Кнопка с картинкой и всплывающий окном',
-  ],
+	[
+		'URL' => 'https://yandex.ru',
+		'ICON' => 'bx-context-toolbar-edit-icon', // CSS класс иконки
+		'TITLE' => 'Кнопка с иконкой',
+	],
+	[
+		'URL' => 'javascript:'.$APPLICATION->getPopupLink([
+			'URL' => '/index.php',
+			'PARAMS' => [
+				'width' => '640',
+				'height' => '480',
+			],
+		]),
+		'SRC' => 'URL картинки',
+		'TITLE' => 'Кнопка с картинкой и всплывающий окном',
+	],
 ]);
 ```
 
@@ -55,12 +55,12 @@ $buttons = $buttons['edit'];
 $tooltipHtmlId = $this->GetEditAreaId($id);
 $this->AddEditAction(
 	$id,
-	$buttons['edit_element']['ACTION'],
+	$buttons['edit_element']['ACTION_URL'],
 	$buttons['edit_element']['TITLE']
 );
 $this->AddDeleteAction(
 	$id,
-	$buttons['delete_element']['ACTION'],
+	$buttons['delete_element']['ACTION_URL'],
 	$buttons['delete_element']['TITLE']
 );
 ```
