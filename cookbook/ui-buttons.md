@@ -64,3 +64,4 @@ $this->AddDeleteAction(
 	$buttons['delete_element']['TITLE']
 );
 ```
+ 
