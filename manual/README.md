@@ -11,6 +11,7 @@
 - [агенты](agents.md)
 - [компоненты](components.md)
 - [почтовые шаблоны](email-templates.md)
+- [шаблоны сайтов](site-templates.md)
 - [инфоблоки](iblock.md)
 - [модули](modules.md)
 - [админка](admin-pages.md)
