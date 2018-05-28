@@ -1,6 +1,8 @@
 # Создание свойства инфоблока
 
-Событие `OnIBlockPropertyBuildList`
+Событие `iblock OnIBlockPropertyBuildList`
+
+https://dev.1c-bitrix.ru/api_help/iblock/classes/user_properties/GetUserTypeDescription.php
 
 ## Пример кода
 
