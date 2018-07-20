@@ -46,3 +46,11 @@ class SelectPriceType extends \CUserTypeIBlockElement
 	}
 }
 ```
+
+## Подписка на событие
+
+```php
+AddEventHandler('iblock', 'OnIBlockPropertyBuildList', function(){
+	return \olof\iblockPropertyType\SelectPriceType::GetUserTypeDescription();
+});
+```
