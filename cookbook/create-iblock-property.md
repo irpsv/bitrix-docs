@@ -11,7 +11,7 @@ https://dev.1c-bitrix.ru/api_help/iblock/classes/user_properties/GetUserTypeDesc
 
 namespace olof\iblockPropertyType;
 
-class SelectPriceType extends \CUserTypeIBlockElement
+class SelectPriceType
 {
 	const USER_TYPE = 'PropertySelectPriceType';
 
