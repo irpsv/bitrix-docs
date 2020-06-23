@@ -7,3 +7,4 @@
 - [Создание свойства инфоблока](create-iblock-property.md)
 - [SEO](seo.md)
 - [Кнопки в публичной части](ui-buttons.md)
+- [Создание скидки для правила корзины](sale-discount-condition.md)
